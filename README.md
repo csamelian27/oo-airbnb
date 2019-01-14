@@ -11,7 +11,7 @@ You are building an app for an Airbnb competitor
   - A `Trip` belongs to a listing and a guest
     - It will also be initialized with a guest, listing, and a duration of the trip
 
-As always, begin with making sure to draw out the relationships and understand the domain. Then, 
+As always, begin with making sure to draw out the relationships and understand the domain. Then,
 below you will find the methods that we'd expect for you to complete. They are grouped by class,
 they are not ordered in any particular way beyond that.  
 
@@ -26,7 +26,7 @@ they are not ordered in any particular way beyond that.
   - Returns an array of all Listing instances that have been created
 - `Listing.find_all_by_city`
   - Takes an argument of a city name (as a string) and returns an array of all Listing instances for that city
-- `Listing.most_popular`
+- `Listing.most_popul_ar`
   - Finds the listing that has had the most trips
 
 #### Guest
@@ -44,7 +44,7 @@ they are not ordered in any particular way beyond that.
   - Takes an argument of a guest's name (as a string), returns an array of Guest instances with that name
 
 #### Trip
-- `Trip#listing`
+- `Trip#listing`ny
   - Returns the Listing object for the trip
 - `Trip#guest`
   - Returns the Guest object for the trip
