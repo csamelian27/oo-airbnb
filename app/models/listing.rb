@@ -30,9 +30,12 @@ class Listing
   end
 
   def self.most_popular
-    sorted = Trip.all.sort_by {|trip| trip.listing.trip_count}
-    most_pop = sorted.max {|a, b| a.listing.trip_count <=> b.listing.trip_count}
-    most_pop.listing
+    # sorted = Trip.all.sort_by {|trip| trip.listing.trip_count}
+    # most_pop = sorted.max {|a, b| a.listing.trip_count <=> b.listing.trip_count}
+    # most_pop.listing
+
+    # Should have done .max_by
+    Listing.all.max_by {|list| list.trip_count}
   end
 
 end
