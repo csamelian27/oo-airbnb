@@ -5,6 +5,7 @@ def reload
 end
 
 ny = Listing.new("New York")
+ny2 = Listing.new("New York")
 sf = Listing.new("San Francisco")
 chi = Listing.new("Chicago")
 

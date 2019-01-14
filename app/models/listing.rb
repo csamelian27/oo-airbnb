@@ -32,7 +32,7 @@ class Listing
   def self.most_popular
     sorted = Trip.all.sort_by {|trip| trip.listing.trip_count}
     most_pop = sorted.max {|a, b| a.listing.trip_count <=> b.listing.trip_count}
-    most_pop.listing.city
+    most_pop.listing
   end
 
 end

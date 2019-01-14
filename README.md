@@ -25,7 +25,7 @@ they are not ordered in any particular way beyond that.
 - `Listing.all`
   - Returns an array of all Listing instances that have been created
 - `Listing.find_all_by_city`
-  - Takes an argument of a city name (as a string) and returns an array of all Listing instances for that city
+  - Takes an argument of a city name (as a string) and returns an array of all Listing instances for that city 
 - `Listing.most_popul_ar`
   - Finds the listing that has had the most trips
 
