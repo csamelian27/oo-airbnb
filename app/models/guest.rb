@@ -27,9 +27,7 @@ class Guest
 
   def self.pro_traveler
     pro_travels = Trip.all.select {|trip| trip.guest.trip_count > 1}
-    pro_travels.map {|trip| trip.guest.name}.uniq
-    # Wasn't certain if these were seeking the unique guest names (as above), or all guest instances (as below)
-    # pro_travels = Trip.all.select {|trip| trip.guest.trip_count > 1}
+    pro_travels.map {|trip| trip.guest}.uniq
   end
 
   def self.find_all_by_name(name)
